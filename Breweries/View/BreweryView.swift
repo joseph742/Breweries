@@ -22,7 +22,7 @@ struct BreweryView: View {
                     .font(.system(size: 18))
                     .foregroundColor(Color.blue)
 
-                Text("\(brewery.city) - \(brewery.street)")
+                Text("\(brewery.city) - \(brewery.street ?? "N/A")")
                     .font(.system(size: 14))
             }
         }

@@ -17,6 +17,11 @@
 		9C59FB3E29C5DAF600FB3B05 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59FB3D29C5DAF600FB3B05 /* Brewery.swift */; };
 		9C59FB4229C5DD9800FB3B05 /* BreweriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59FB4129C5DD9800FB3B05 /* BreweriesView.swift */; };
 		9C59FB4429C5DDEC00FB3B05 /* BreweryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59FB4329C5DDEC00FB3B05 /* BreweryView.swift */; };
+		9C59FB4729C5DFD400FB3B05 /* BreweriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59FB4629C5DFD400FB3B05 /* BreweriesViewModel.swift */; };
+		9C59FB4A29C5EA5300FB3B05 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59FB4929C5EA5300FB3B05 /* APIError.swift */; };
+		9C59FB4D29C5FA1200FB3B05 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59FB4C29C5FA1200FB3B05 /* NetworkController.swift */; };
+		9C59FB4F29C5FAAD00FB3B05 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59FB4E29C5FAAD00FB3B05 /* Parsing.swift */; };
+		9C59FB5329C5FBDF00FB3B05 /* BreweriesLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59FB5229C5FBDF00FB3B05 /* BreweriesLogicController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		9C59FB3D29C5DAF600FB3B05 /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
 		9C59FB4129C5DD9800FB3B05 /* BreweriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesView.swift; sourceTree = "<group>"; };
 		9C59FB4329C5DDEC00FB3B05 /* BreweryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryView.swift; sourceTree = "<group>"; };
+		9C59FB4629C5DFD400FB3B05 /* BreweriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesViewModel.swift; sourceTree = "<group>"; };
+		9C59FB4929C5EA5300FB3B05 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		9C59FB4C29C5FA1200FB3B05 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		9C59FB4E29C5FAAD00FB3B05 /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
+		9C59FB5229C5FBDF00FB3B05 /* BreweriesLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesLogicController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,9 @@
 		9C47CFE329C5D46D002EFB79 /* Breweries */ = {
 			isa = PBXGroup;
 			children = (
+				9C59FB4B29C5F9BF00FB3B05 /* API */,
+				9C59FB4829C5EA3900FB3B05 /* ErrorHandling */,
+				9C59FB4529C5DFA900FB3B05 /* ViewModel */,
 				9C59FB4029C5DD7B00FB3B05 /* View */,
 				9C59FB3F29C5DB5A00FB3B05 /* Model */,
 				9C47CFE429C5D46D002EFB79 /* BreweriesApp.swift */,
@@ -152,6 +165,48 @@
 				9C59FB4329C5DDEC00FB3B05 /* BreweryView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9C59FB4529C5DFA900FB3B05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C59FB4629C5DFD400FB3B05 /* BreweriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C59FB4829C5EA3900FB3B05 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				9C59FB4929C5EA5300FB3B05 /* APIError.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		9C59FB4B29C5F9BF00FB3B05 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9C59FB5129C5FBBB00FB3B05 /* LogicController */,
+				9C59FB5029C5FBA900FB3B05 /* NetworkController */,
+				9C59FB4E29C5FAAD00FB3B05 /* Parsing.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9C59FB5029C5FBA900FB3B05 /* NetworkController */ = {
+			isa = PBXGroup;
+			children = (
+				9C59FB4C29C5FA1200FB3B05 /* NetworkController.swift */,
+			);
+			path = NetworkController;
+			sourceTree = "<group>";
+		};
+		9C59FB5129C5FBBB00FB3B05 /* LogicController */ = {
+			isa = PBXGroup;
+			children = (
+				9C59FB5229C5FBDF00FB3B05 /* BreweriesLogicController.swift */,
+			);
+			path = LogicController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C59FB4D29C5FA1200FB3B05 /* NetworkController.swift in Sources */,
+				9C59FB4F29C5FAAD00FB3B05 /* Parsing.swift in Sources */,
 				9C47CFE729C5D46D002EFB79 /* ContentView.swift in Sources */,
 				9C59FB4229C5DD9800FB3B05 /* BreweriesView.swift in Sources */,
 				9C59FB3E29C5DAF600FB3B05 /* Brewery.swift in Sources */,
+				9C59FB4729C5DFD400FB3B05 /* BreweriesViewModel.swift in Sources */,
 				9C47CFE529C5D46D002EFB79 /* BreweriesApp.swift in Sources */,
 				9C59FB4429C5DDEC00FB3B05 /* BreweryView.swift in Sources */,
+				9C59FB4A29C5EA5300FB3B05 /* APIError.swift in Sources */,
+				9C59FB5329C5FBDF00FB3B05 /* BreweriesLogicController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
